@@ -1,0 +1,5 @@
+name=input("Hello,What is your name?\n")
+old=input("Hi{}!How old are you?\n".format(name))
+print("So You're {}. oh? That's not old at all!".format(old))
+c=input("How such do you make {}?".format(name))
+print(c,"I hope that's per hour and not per year!LOL!")

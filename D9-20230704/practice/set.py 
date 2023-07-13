@@ -1,0 +1,2 @@
+set={"cat","dog","pig"}
+print(str(set))

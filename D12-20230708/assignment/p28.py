@@ -1,5 +1,8 @@
 current=0
 price=10
+sales_tax=8.25
+cost_per_order=5
+per_keychain_cost=1
 # print=input(" old keychain shop\n1.Add keychains to order\n2.Remove keychains to order\n3.View current order\n4.Checkout")
 
 def add_keychain():
@@ -15,7 +18,11 @@ def remove_keychain():
 def view_order():
     global current
     global price
-    return f"You have {current} keychains.\nKeychain cost ${price} per each.\nTotal cost is {current*price}"
+    global sales_tax
+    global current_per_order
+    global per_keychain_cost
+    return f"You have {current} keychains.\nKeychain cost ${price} per each.\nTotal cost is {(current*price)+((per_keychain_cost*current)+cost_per_order)+((current*price)*(sales_tax/100))}"
+
     # total=current*price
     # return total
 def checkout():
@@ -23,7 +30,8 @@ def checkout():
     global price
     name=input("What is your name?:")
     print(f"Thank you {name}for ordering!")
-    return f"you have {current} keychains.\nKeychain cost ${price} each.\nTotal cost is ${price*current}"
+    return f"you have {current} keychains.\nKeychain cost ${price} each.\nTotal cost is ${(current*price)+((per_keychain_cost*current)+cost_per_order)+((current*price)*(sales_tax/100))}"
+
     
     # print(f"Thank you {name} for ordering!")
     print("checkout")

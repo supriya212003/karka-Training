@@ -29,7 +29,7 @@ def checkout():
     global current
     global price
     name=input("What is your name?:")
-    print(f"Thank you {name}for ordering!")
+    print(f"Thank you {name} for ordering!")
     return f"you have {current} keychains.\nKeychain cost ${price} each.\nTotal cost is ${(current*price)+((per_keychain_cost*current)+cost_per_order)+((current*price)*(sales_tax/100))}"
 
     

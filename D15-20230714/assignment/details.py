@@ -15,19 +15,19 @@ def details(friends):
 # details(friends)
 
 
-def age_21(friends):
-    for friend in friends:
-        name=friend["name"]
-        age=friend["age"]
-        place=friend["place"]
+# def age_21(friends):
+    # for friend in friends:
+        # name=friend["name"]
+        # age=friend["age"]
+        # place=friend["place"]
         if friend["age"]>21:
             print(f"I am {name},I'm {age} years old and I'm from {place}.")
-# age_21(friends)
+details(friends)
 
 
 
-if details(friends):
-    details(friends)
-elif age_21(friends):
-    age_21(friends)
+# if details(friends):
+#     details(friends)
+# elif age_21(friends):
+#     age_21(friends)
 

@@ -5,35 +5,34 @@ players=[{"name":"sachin","centuries":12,"half_centuries":32,"wickets":200,"hat_
         {"name":"mahi","centuries":15,"half_centuries":25,"wickets":300,"hat_trick":10,"top_score":[180,160,150,170,200]}]
 
 count=0
-def centuries(players):
-    for player in range(len(players)):
-        if player['centuries']>10:
+
+for player in players:
+    if(player['centuries'])>=10:
             count+=1
-        return count
-(centuries(players))
+print( f"no of players more than 10 centuries",count)
+
 # def hat_trick(players):
 #     for player in players:
 #         if player['hat_trick']>5:
 #          num_players=cricket(players)
 #     print("Number of players more 10 centuries:",count)
 
-def hat_trick(players):
-    for player in players:
-        if player["hat_trick"]>5:
-            print("player name:",player["name"],"player hat_trick:",player["hat_trick"])
+# def hat_trick(players):
+for player in players:
+    if(player["hat_trick"])>5:
+        print("player name:",player["name"],"player hat_trick:",player["hat_trick"])
 
-player_name=cricket(players)
+# player_name=cricket(players)
 
 
-def score(players):
-    s=score["top_score"]
-    top_score=0
-    # for player in players:
-    if player['top_score']>top_score:
+# def score(players):
+    # s=score["top_score"]
+top_score=0
+for player in players:
+    if(player['top_score']>top_score):
         top_score=player['top_score']
-    return top_score
-
-(cricket(players))
+    # return(top_score)
+    print(top_score)
 
 
     

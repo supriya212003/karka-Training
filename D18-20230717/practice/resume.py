@@ -41,5 +41,6 @@ print(lan[1])
 
 ad=my_resume["personal_details"]["adress"]
 for ads in ad:
+    
     if ads=="village":
         print(ad["village"])
